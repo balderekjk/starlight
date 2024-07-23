@@ -6,24 +6,21 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "Placeholder",
-      components: {
-        Header: "./src/components/Header.astro",
-      },
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
+      title: "NHEA",
       sidebar: [
         {
-          label: "Guides",
+          label: "Navigation",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
+            { label: "home", slug: "" },
+            { label: "annual convention", slug: "annual-convention" },
+            { label: "register", slug: "register" },
+            { label: "about us", slug: "about-us" },
           ],
         },
         {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          autogenerate: { directory: "docs" },
         },
       ],
       customCss: ["./src/tailwind.css"],
