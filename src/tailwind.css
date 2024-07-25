@@ -8,11 +8,19 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
 */
 
 @layer base {
-  h1 {
-    @apply text-[2em];
+  hr {
+    @apply clear-both;
   }
 }
-
+:root {
+  --sl-content-width: min(50rem, 100%);
+}
+.sl-container > h1#_top {
+  @apply text-[var(--sl-color-accent)] dark:text-[var(--sl-color-accent-high)];
+}
 .sl-container {
   @apply md:mx-12 mx-6;
+}
+.content-panel:first-of-type {
+  @apply pt-3;
 }

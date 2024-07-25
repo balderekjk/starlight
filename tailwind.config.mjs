@@ -12,9 +12,9 @@ export default {
         // Your preferred gray scale. Zinc is closest to Starlight’s defaults.
         gray: colors.zinc,
       },
-    },
-    screens: {
-      md: "800px",
+      screens: {
+        md: "800px",
+      },
     },
   },
   plugins: [starlightPlugin()],
