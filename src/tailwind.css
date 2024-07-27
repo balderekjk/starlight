@@ -12,9 +12,12 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
     @apply clear-both;
   }
 }
-.sl-container > h1#_top {
-  @apply text-[var(--sl-color-accent)] dark:text-[var(--sl-color-accent-high)];
-}
 .content-panel:first-of-type {
   @apply pt-3;
+}
+.sl-container {
+  @apply mx-0;
+}
+.sl-container > h1#_top {
+  @apply text-[var(--sl-color-accent)] dark:text-[var(--sl-color-accent-high)];
 }

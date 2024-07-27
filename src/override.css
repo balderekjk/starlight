@@ -25,20 +25,14 @@
 aside.right-sidebar-container {
   width: 0;
 }
-starlight-theme-select {
-  margin-right: 1rem;
-}
 button[aria-label="Menu"] {
   display: flex;
 }
 div.dropdown {
   width: 100dvw;
 }
-div.lg\:sl-hidden {
+div.right-sidebar > div.lg\:sl-hidden {
   display: flex;
-}
-div.right-sidebar-panel {
-  display: none;
 }
 nav:has([aria-expanded="true"]) ~ .main-frame {
   padding-inline-start: var(--sl-content-inline-start);
@@ -50,5 +44,9 @@ nav[aria-labelledby="starlight__on-this-page--mobile"] {
 nav:has([aria-expanded="true"])
   ~ .main-frame
   nav[aria-labelledby="starlight__on-this-page--mobile"] {
+  display: flex;
   inset-inline-start: var(--sl-content-inline-start, 0);
+}
+starlight-theme-select {
+  margin-right: 1rem;
 }
