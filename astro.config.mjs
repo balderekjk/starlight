@@ -25,7 +25,6 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/tailwind.css"],
-      tableOfContents: false,
       pagination: false,
     }),
     tailwind({ applyBaseStyles: false }),
