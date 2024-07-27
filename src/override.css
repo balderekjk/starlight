@@ -1,15 +1,15 @@
 :root {
-  --sl-mobile-toc-height: 3rem !important;
+  --sl-mobile-toc-height: 3rem;
+}
+.main-frame {
+  padding-inline-start: 0;
+}
+.main-pane {
+  width: 100% !important;
 }
 .sl-container {
   margin-inline: auto;
-  max-width: 67.5rem !important;
-}
-button[aria-label="Menu"] {
-  display: flex !important;
-}
-starlight-theme-select {
-  margin-right: 1rem;
+  max-width: 67.5rem;
 }
 #starlight__sidebar {
   display: initial;
@@ -22,20 +22,26 @@ starlight-theme-select {
 [aria-expanded="false"] ~ .sidebar-pane {
   visibility: hidden !important;
 }
-.main-frame {
-  padding-inline-start: 0 !important;
+aside.right-sidebar-container {
+  width: 0;
 }
-nav:has([aria-expanded="true"]) ~ .main-frame {
-  padding-inline-start: var(--sl-content-inline-start) !important;
+starlight-theme-select {
+  margin-right: 1rem;
+}
+button[aria-label="Menu"] {
+  display: flex;
+}
+div.dropdown {
+  width: 100dvw;
 }
 div.lg\:sl-hidden {
   display: flex;
 }
-aside.right-sidebar-container {
-  width: 0;
-}
 div.right-sidebar-panel {
   display: none;
+}
+nav:has([aria-expanded="true"]) ~ .main-frame {
+  padding-inline-start: var(--sl-content-inline-start);
 }
 nav[aria-labelledby="starlight__on-this-page--mobile"] {
   display: flex;
@@ -45,10 +51,4 @@ nav:has([aria-expanded="true"])
   ~ .main-frame
   nav[aria-labelledby="starlight__on-this-page--mobile"] {
   inset-inline-start: var(--sl-content-inline-start, 0);
-}
-div.dropdown {
-  width: 100dvw;
-}
-.main-pane {
-  width: 100% !important;
 }
