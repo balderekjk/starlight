@@ -8,16 +8,25 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
 */
 
 @layer base {
+  html {
+    @apply [overscroll-behavior-y:none];
+  }
   hr {
     @apply clear-both;
   }
 }
+main .sl-container {
+  @apply mx-auto max-w-[67.5rem];
+}
+main .sl-container > h1#_top {
+  @apply text-[var(--sl-color-text-accent)];
+}
+main .sl-markdown-content {
+  @apply min-h-[33dvh];
+}
+div.right-sidebar {
+  @apply border-s-[1px] border-solid border-[var(--sl-color-gray-6)];
+}
 .content-panel:first-of-type {
   @apply pt-3;
-}
-.sl-container {
-  @apply mx-0;
-}
-.sl-container > h1#_top {
-  @apply text-[var(--sl-color-accent)] dark:text-[var(--sl-color-accent-high)];
 }

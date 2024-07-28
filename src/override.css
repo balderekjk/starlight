@@ -7,10 +7,6 @@
 .main-pane {
   width: 100% !important;
 }
-.sl-container {
-  margin-inline: auto;
-  max-width: 67.5rem;
-}
 #starlight__sidebar {
   display: initial;
   visibility: hidden;
@@ -21,9 +17,6 @@
 }
 [aria-expanded="false"] ~ .sidebar-pane {
   visibility: hidden !important;
-}
-aside.right-sidebar-container {
-  width: 0;
 }
 button[aria-label="Menu"] {
   display: flex;
@@ -36,6 +29,9 @@ div.right-sidebar > div.lg\:sl-hidden {
 }
 nav:has([aria-expanded="true"]) ~ .main-frame {
   padding-inline-start: var(--sl-content-inline-start);
+}
+aside.right-sidebar-container {
+  width: 0;
 }
 nav[aria-labelledby="starlight__on-this-page--mobile"] {
   display: flex;
