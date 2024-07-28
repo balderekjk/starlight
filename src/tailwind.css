@@ -11,7 +11,7 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
   html {
     @apply [overscroll-behavior-y:none];
   }
-  hr {
+  br {
     @apply clear-both;
   }
 }
@@ -29,4 +29,7 @@ div.right-sidebar {
 }
 .content-panel:first-of-type {
   @apply pt-3;
+}
+.sl-markdown-content blockquote {
+  @apply border-s-[2px] border-[var(--sl-color-text-accent)];
 }
