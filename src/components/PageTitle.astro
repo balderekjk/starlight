@@ -2,12 +2,13 @@
 import type { Props } from "@astrojs/starlight/props";
 ---
 
-<div class="h-[380px] m-[-1px] overflow-hidden">
-  <img
-    height="381px"
-    class="h-[381px] bg-top [background-image:url(src/assets/nhea-cover.jpg)] w-full"
-  />
+<div
+  role="img"
+  aria-label="NHEA Banner"
+  class="h-[380px] bg-top bg-[url(src/assets/nhea-cover.jpg)] w-full"
+>
 </div>
+
 <h1
   id="_top"
   class="py-6 max-w-[70rem] mx-auto px-[var(--sl-content-pad-x)] font-semibold mt-4 [font-size:var(--sl-text-h1)] leading-[var(--sl-line-height-headings)] text-[var(--sl-color-white)]"
