@@ -23,7 +23,7 @@ export default defineConfig({
         Footer: "./src/components/Footer.astro",
         PageTitle: "./src/components/PageTitle.astro",
       },
-      customCss: ["./src/tailwind.css"],
+      customCss: ["./src/tailwind.css", "@fontsource/figtree"],
     }),
     tailwind({ applyBaseStyles: false }),
   ],

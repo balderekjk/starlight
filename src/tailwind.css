@@ -8,6 +8,35 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
 */
 
 @layer base {
+  :root {
+    --sl-font: "Figtree", sans-serif;
+    --sl-content-pad-x: 2rem;
+    --sl-color-accent-low: #102c00;
+    --sl-color-accent: #3b7c00;
+    --sl-color-accent-high: #aed69c;
+    --sl-color-white: #ffffff;
+    --sl-color-gray-1: #ecedf5;
+    --sl-color-gray-2: #c0c1ca;
+    --sl-color-gray-3: #888a9b;
+    --sl-color-gray-4: #555766;
+    --sl-color-gray-5: #353745;
+    --sl-color-gray-6: #242633;
+    --sl-color-black: #17181e;
+  }
+  :root[data-theme="light"] {
+    --sl-color-accent-low: #c3e2b6;
+    --sl-color-accent: #3c7e00;
+    --sl-color-accent-high: #193c00;
+    --sl-color-white: #17181e;
+    --sl-color-gray-1: #242633;
+    --sl-color-gray-2: #353745;
+    --sl-color-gray-3: #555766;
+    --sl-color-gray-4: #888a9b;
+    --sl-color-gray-5: #c0c1ca;
+    --sl-color-gray-6: #ecedf5;
+    --sl-color-gray-7: #f5f6fa;
+    --sl-color-black: #ffffff;
+  }
   html {
     @apply [overscroll-behavior-y:none];
   }
@@ -15,7 +44,7 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
     @apply text-[1.05rem];
   }
   hr {
-    @apply clear-both;
+    @apply clear-both pt-4;
   }
 }
 main .sl-container {

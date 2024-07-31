@@ -8,16 +8,9 @@ import type { Props } from "@astrojs/starlight/props";
     class="h-[381px] bg-top [background-image:url(src/assets/nhea-cover.jpg)] w-full"
   />
 </div>
-<h1 id="_top" class="py-6 max-w-[70rem] mx-auto px-[var(--sl-content-pad-x)]">
+<h1
+  id="_top"
+  class="py-6 max-w-[70rem] mx-auto px-[var(--sl-content-pad-x)] font-semibold mt-4 [font-size:var(--sl-text-h1)] leading-[var(--sl-line-height-headings)] text-[var(--sl-color-white)]"
+>
   {Astro.props.entry.data.title}
 </h1>
-
-<style>
-  h1 {
-    margin-top: 1rem;
-    font-size: var(--sl-text-h1);
-    line-height: var(--sl-line-height-headings);
-    font-weight: 600;
-    color: var(--sl-color-white);
-  }
-</style>
