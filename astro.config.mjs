@@ -19,7 +19,10 @@ export default defineConfig({
           ],
         },
       ],
-      components: { Footer: "./src/components/Footer.astro" },
+      components: {
+        Footer: "./src/components/Footer.astro",
+        PageTitle: "./src/components/PageTitle.astro",
+      },
       customCss: ["./src/tailwind.css"],
     }),
     tailwind({ applyBaseStyles: false }),
