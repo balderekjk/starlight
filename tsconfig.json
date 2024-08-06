@@ -1,12 +1,16 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "types": ["astro/client"],
+    "types": [
+      "astro/client"
+    ],
     "baseUrl": ".",
     "paths": {
       "virtual:starlight/user-config": [
         "./node_modules/@astrojs/starlight/virtual.d.ts"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

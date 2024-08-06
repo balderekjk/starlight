@@ -17,5 +17,6 @@ export default {
       },
     },
   },
+  safelist: ["hidden"],
   plugins: [starlightPlugin()],
 };

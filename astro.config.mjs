@@ -1,10 +1,13 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: { "/": "/home" },
+  redirects: {
+    "/": "/home",
+  },
   integrations: [
     starlight({
       title: "NHEA",
@@ -12,10 +15,22 @@ export default defineConfig({
         {
           label: "Main",
           items: [
-            { label: "Home", slug: "home" },
-            { label: "Annual Convention", slug: "annual-convention" },
-            { label: "Register", slug: "register" },
-            { label: "About Us", slug: "about-us" },
+            {
+              label: "Home",
+              slug: "home",
+            },
+            {
+              label: "Annual Convention",
+              slug: "annual-convention",
+            },
+            {
+              label: "Register",
+              slug: "register",
+            },
+            {
+              label: "About Us",
+              slug: "about-us",
+            },
           ],
         },
       ],
@@ -25,6 +40,9 @@ export default defineConfig({
       },
       customCss: ["./src/tailwind.css", "@fontsource/figtree"],
     }),
-    tailwind({ applyBaseStyles: false }),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
   ],
 });
